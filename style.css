@@ -30,13 +30,16 @@ body {
 .buttons-container {
     display: grid;
     flex: 1;
-    grid-template-columns: [first] 3fr [line2] 1fr [line3] 1fr [end];
+    grid-template-columns: [first] 1fr [line2] 3fr [line3] 1fr [line4] 1fr [end];
     
 }
 .numbers-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+}
+.firstCol {
+    display: grid;
 }
 
 .secondCol {
