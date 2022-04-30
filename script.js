@@ -43,6 +43,7 @@ const clearButton = document.querySelector('.button.clear');
 clearButton.addEventListener('click', (e) => {
     display.innerHTML = '';
     countClick = 0;
+    countEqualsClick = 0;
 });
 
 const backSpace = document.querySelector('.button.backspace');
@@ -56,10 +57,12 @@ let currOperator = '';
 let currNumber;
 let countClick = 0;
 let countDotClick = 0;
+let countEqualsClick = 0;
 
 const btnOperators = document.querySelectorAll('.button.operator');
 btnOperators.forEach(button => button.addEventListener('click', (e) => {
     countDotClick = 0;
+    countEqualsClick = 0;
     if (countClick === 0) {
         countClick++;
         currNumber = Number(display.innerHTML);
@@ -75,7 +78,8 @@ btnOperators.forEach(button => button.addEventListener('click', (e) => {
 
 const btnEquals = document.querySelector('.button.equals');
 btnEquals.addEventListener('click', () => {
-    if (display.innerHTML !== '') {
+    countEqualsClick++;
+    if (display.innerHTML !== '' && countEqualsClick === 1) {
         performCalc();
         countClick = 0;
     }
