@@ -12,18 +12,19 @@ body {
     width: 400px;
     height: 400px;
     border-radius: 6px;
-    
     box-shadow: 6px 6px 12px 6px rgba(46, 66, 95, 0.2) inset, 6px 6px 10px 6px rgba(105, 64, 64, 0.19);
 }
 
 #field {
     display: flex;
     justify-content: right;
+    align-items: center;
     background-color: #415A77;
     color: aliceblue;
     font-size: larger;
     padding-right: 15px;
     padding-left: 15px;
+    height: 40px;
     border: 1px solid #819ca9;;
 }
 .buttons-container {
