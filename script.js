@@ -33,6 +33,12 @@ numButtons.forEach(button => button.addEventListener('click', (e) => {
     display.innerHTML += e.target.innerHTML;
 }));
 
+document.addEventListener('keypress', (e) => {
+    if (e.keyCode <= 57 && e.keyCode >= 48) {
+        display.innerHTML += e.key;
+    }    
+});
+
 const clearButton = document.querySelector('.button.clear');
 clearButton.addEventListener('click', (e) => {
     display.innerHTML = '';

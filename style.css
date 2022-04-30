@@ -2,15 +2,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #778DA9;
+    background-color: #2487a0c9;
     color: #E0E1DD;
+    font-size: 25px;
 }
 
 #container {
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 400px;
+    height: 550px;
     border-radius: 6px;
     box-shadow: 6px 6px 12px 6px rgba(46, 66, 95, 0.2) inset, 6px 6px 10px 6px rgba(105, 64, 64, 0.19);
 }
@@ -21,35 +22,26 @@ body {
     align-items: center;
     background-color: #415A77;
     color: aliceblue;
-    font-size: larger;
+    font-size: 36px;
+    font-weight: bold;
     padding-right: 15px;
     padding-left: 15px;
-    height: 40px;
-    border: 1px solid #819ca9;;
+    height: 80px;
+    border: 1px solid #819ca9;
+    transition: 0.3s;
 }
 .buttons-container {
     display: grid;
     flex: 1;
-    grid-template-columns: [first] 1fr [line2] 3fr [line3] 1fr [line4] 1fr [end];
-    
+    grid-template-columns: [first] 3fr [line2] 1fr [end];
 }
 .numbers-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
-.firstCol {
-    display: grid;
-}
-
-.secondCol {
-    display: grid;
-}
-
 .lastCol{
     display: grid;
 }
-
 .button {
    display: flex;
    justify-content: center;
@@ -61,7 +53,6 @@ button {
     font-size: 26px;
     border: 1px solid;
     border-color: #819ca9;
-    
 }
 button:hover {
     background-color: #1B263B;
@@ -69,6 +60,5 @@ button:hover {
 }
 button:active {
     background-color: #82b4d6;
-    transition: 0.2s;
-
+    transition: 0.5s;
 }
